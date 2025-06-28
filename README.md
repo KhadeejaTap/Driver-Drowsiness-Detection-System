@@ -1,5 +1,4 @@
 # Driver-Drowsiness-Detection-System
-# Driver Drowsiness Detection System
 
 A real-time computer vision tool that detects signs of driver fatigue using facial landmarks and head pose estimation. The system triggers an audio alert when drowsiness indicators such as prolonged eye closure or head tilting are detected.
 
@@ -21,6 +20,22 @@ A real-time computer vision tool that detects signs of driver fatigue using faci
 
 ## How to Run
 
-1. Install dependencies:
-   ```bash
-   pip install opencv-python mediapipe numpy playsound
+Clone the repository:
+git clone https://github.com/KhadeejaTap/Driver-Drowsiness-Detection-System
+.git
+cd Driver-Drowsiness-Detection-System
+
+
+(Optional) Create and activate a virtual environment:
+python -m venv venv
+source venv/bin/activate       # macOS/Linux
+venv\Scripts\activate          # Windows
+
+
+Install dependencies:
+pip install opencv-python mediapipe numpy playsound
+
+
+Run the script:
+python drowsiness_detector.py
+
