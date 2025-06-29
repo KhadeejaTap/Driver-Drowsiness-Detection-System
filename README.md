@@ -38,4 +38,5 @@ pip install opencv-python mediapipe numpy playsound
 
 Run the script:
 python drowsiness_detector.py
+Press q to quit
 
