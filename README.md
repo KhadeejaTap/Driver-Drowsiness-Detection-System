@@ -24,9 +24,9 @@ Clone the repository:
 git clone https://github.com/KhadeejaTap/Driver-Drowsiness-Detection-System
 
 Run Python 3.11 or slightly older, MediaPipe is not supported on newer versions
-
+  
 (Optional) Create and activate a virtual environment:
-python -m venv venv
+py -3.11 -m venv venv
 source venv/bin/activate       # macOS/Linux
 venv\Scripts\activate          # Windows
 
@@ -35,7 +35,5 @@ Install dependencies:
 pip install opencv-python mediapipe numpy simpleaudio
 
 
-Run the script:
-python drowsiness_detector.py
-Press q to quit
+Run the script, Press q to quit
 
