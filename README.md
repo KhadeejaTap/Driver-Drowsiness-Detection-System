@@ -15,16 +15,15 @@ A real-time computer vision tool that detects signs of driver fatigue using faci
 - OpenCV
 - MediaPipe
 - NumPy
-- playsound
+- simpleaudio
 - threading
 
 ## How to Run
 
 Clone the repository:
 git clone https://github.com/KhadeejaTap/Driver-Drowsiness-Detection-System
-.git
-cd Driver-Drowsiness-Detection-System
 
+Run Python 3.11 or slightly older, MediaPipe is not supported on newer versions
 
 (Optional) Create and activate a virtual environment:
 python -m venv venv
@@ -33,7 +32,7 @@ venv\Scripts\activate          # Windows
 
 
 Install dependencies:
-pip install opencv-python mediapipe numpy playsound
+pip install opencv-python mediapipe numpy simpleaudio
 
 
 Run the script:
