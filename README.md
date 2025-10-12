@@ -25,8 +25,9 @@ git clone https://github.com/KhadeejaTap/Driver-Drowsiness-Detection-System
 
 Run Python 3.11 or slightly older, MediaPipe is not supported on newer versions
   
-(Optional) Create and activate a virtual environment:
+(Optional) Create a virtual environment:
 py -3.11 -m venv venv
+Activate it: 
 Mac/Linux: source venv/bin/activate
 Windows: venv\Scripts\activate
 
