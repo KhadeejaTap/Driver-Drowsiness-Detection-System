@@ -27,13 +27,13 @@ Run Python 3.11 or slightly older, MediaPipe is not supported on newer versions
   
 (Optional) Create and activate a virtual environment:
 py -3.11 -m venv venv
-source venv/bin/activate       # macOS/Linux
-venv\Scripts\activate          # Windows
+Mac/Linux: source venv/bin/activate
+Windows: venv\Scripts\activate
 
 
 Install dependencies:
 pip install opencv-python mediapipe numpy simpleaudio
 
 
-Run the script, Press q to quit
+Run, Press q to quit
 
