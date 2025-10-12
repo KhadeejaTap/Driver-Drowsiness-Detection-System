@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import mediapipe as mp
-from playsound import playsound
+import simpleaudio as sa
 import threading
 import math
 
@@ -13,7 +13,7 @@ HEAD_PITCH_THRESHOLD = 15
 # Alarm
 alarm_on = False
 def play_alarm():
-    playsound("alarm.wav")
+    sa.WaveObject.from_wave_file("alarm.wav").play()
 
 # Eye EAR Function
 def euclidean(p1, p2):
@@ -139,3 +139,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
