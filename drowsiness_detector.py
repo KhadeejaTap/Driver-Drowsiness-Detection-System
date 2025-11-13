@@ -42,8 +42,16 @@ HEAD_LANDMARKS = {
 mp_face_mesh = mp.solutions.face_mesh
 face_mesh = mp_face_mesh.FaceMesh(static_image_mode=False, max_num_faces=1)
 
-# Webcam 
-cap = cv2.VideoCapture(0)
+# Webcam, finding the one connected
+def find_camera_source(max_cams=3):
+    for i in range(max_cams):
+        cap = cv2.VideoCapture(i)
+        if cap.isOpened():
+            print(f"Camera {i} found and opened.")
+            return i
+    raise RuntimeError("No camera sources found.")
+cam_index = find_camera_source()
+cap = cv2.VideoCapture(cam_index)
 frame_counter = 0
 
 while True:
@@ -52,7 +60,10 @@ while True:
         break
 
     h, w, _ = frame.shape
-    rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    if len(frame.shape) == 2:  # grayscale (IR)
+        rgb = cv2.cvtColor(frame, cv2.COLOR_GRAY2RGB)
+    else:
+        rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     results = face_mesh.process(rgb)
 
     trigger_alarm = False
