@@ -1,6 +1,8 @@
 # Driver-Drowsiness-Detection-System
 
-A real-time computer vision tool that detects signs of driver fatigue using facial landmarks and head pose estimation. The system triggers an audio alert when drowsiness indicators such as prolonged eye closure or head tilting are detected. Demo: https://go.screenpal.com/watch/cT6lqnnbIAY
+A real-time computer vision tool that detects signs of driver fatigue using facial landmarks and head pose estimation. The system triggers an audio alert when drowsiness indicators such as prolonged eye closure or head tilting are detected.
+
+Demo: to be made
 
 ## Features
 
